@@ -28,15 +28,14 @@ glob(htmlGlob, function (err, files) {
           continue
         }
         $('#i18n').append(
-          $('\n<span>')
+          $('<span>') // formatted '\n<span>'
             .attr('lang', lang)
-            .attr('data-i18n', key)
+            .attr('data-i18n-key', key) // not 'data-i18n' so they don't get selected
             .text(value)
         )
       }
     })
-    fs.writeFileSync('./test.html', $.html())
-    // console.log($i18n.html())
+    fs.writeFileSync(file, $.html())
   })
 
 })
