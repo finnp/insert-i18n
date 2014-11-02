@@ -1,15 +1,33 @@
 {
   "name": "insert-i18n",
   "version": "1.0.0",
-  "description": "",
+  "description": "Insert i18n data from json files into html",
   "main": "index.js",
+  "bin": {
+    "insert-i18n": "./cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Finn Pauls",
+  "license": "MIT",
   "dependencies": {
     "cheerio": "^0.17.0",
     "glob": "^4.0.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finnp/insert-i18n.git"
+  },
+  "keywords": [
+    "i18n",
+    "internationalisation",
+    "inline",
+    "internationalization"
+  ],
+  "bugs": {
+    "url": "https://github.com/finnp/insert-i18n/issues"
+  },
+  "homepage": "https://github.com/finnp/insert-i18n"
 }
